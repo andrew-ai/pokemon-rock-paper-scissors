@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div id="screen">
+
+      <!-- CPU -->
+      <div>
+        <div class="hpbar" id="cpuhpbar">
+          <p>CPU</p>
+          <p id="cpu_hp">HP: 5/5</p>
+        </div>
+  
+        <img id="cpu-action-img" src="images/rock.png" alt="Cpu action" width="50" height="50">
+        <img id="cpu-img" src="images/cpu.png" alt="Cpu img" width="170" height="170">
+      </div>
+
+      <!-- PLAYER -->
+      <div>
+        <img id="player-img" src="images/player.png" alt="Player img" width="170" height="170">
+        <img id="player-action-img" src="images/rock.png" alt="Player action" width="50" height="50">
+  
+        <div id="playerhpbar" class="hpbar">
+          <p>PLAYER</p>
+          <p id="player_hp">HP: 5/5</p>
+        </div>
+      </div>
+
+      <!-- Dialogue Box-->
+      <table id="table1">
+        <tr>
+          <td id="tablediag" class="td1">
+            <p>WHAT WILL</p>
+            <p>PLAYER DO?</p>
+          </td>
+          <td class="td1">
+            <table id="table2"><tr><td class="td2"><p id="r"><i class="fa fa-caret-right fa-lg"></i> ROCK</p></td><td class="td2"><p id="p">PAPER</p></td></tr><tr><td class="td2"><p id="s">SCISSORS</p></td><td class="td2"></td></tr></table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <audio id="player" controls loop>
+      <source src="media/battle.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js" charset="utf-8"></script>  
+
+  </body>
+</html>
+

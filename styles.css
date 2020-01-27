@@ -1,0 +1,112 @@
+:root {
+    --v-margin: 20px;  
+    --v-padding: 20px;
+}
+
+#screen {
+    position: relative;
+    width: 640px;
+    height: 576px;
+    border: 3px solid black;
+}
+
+.hpbar {
+    width: 35%;
+    height: 15%;
+    border: 3px solid black;
+    display: inline-block;
+    margin: var(--v-margin);
+    padding: var(--v-padding);
+}
+
+#playerhpbar {
+    float: right;
+}
+
+#cpu-action-img {
+    position: relative;
+    left: 150px;
+    display: none;
+}
+
+#cpu-img {
+    float: right;
+}
+
+#player-action-img {
+    position: relative;
+    top: 50px;
+    display: none;
+}
+
+#player-img {
+    float: left;
+}
+
+#dbox {
+    border: 3px solid black;
+    height: 28%;
+    margin: var(--v-margin);
+    padding: var(--v-padding);
+    clear: both;
+    float: bottom;
+}
+
+#dbox1 {
+    height: 60%;
+    width: 40%;
+    padding: var(--v-padding);
+    float: left;
+}
+
+#dbox2 {
+    height: 60%;
+    width: 40%;
+    padding: var(--v-padding);
+    float: right;
+}
+
+#table1 {
+    margin: var(--v-margin); 
+    height: 30%;
+    width: 94%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: var(--v-padding);
+}
+
+.td1 {
+    width: 50%;
+    padding: var(--v-padding);
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+#table2 {
+    width: 100%
+}
+
+.td2 {
+    width: 50%;
+}
+
+/* #table1, td {
+    margin: var(--v-margin); 
+    height: 30%;
+    width: 94%;
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 3px solid black;
+}
+
+td {
+    padding: var(--v-padding);
+    height: 60%;
+    width: 40%;
+}
+
+table, table {
+    border: none;
+} */

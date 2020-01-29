@@ -15,7 +15,7 @@
       <div>
         <div class="hpbar" id="cpuhpbar">
           <p>CPU</p>
-          <p id="cpu_hp">HP: 5/5</p>
+          <p id="cpu_hp">HP: {{cpu_hp}}/5</p>
         </div>
   
         <img id="cpu-action-img" src="images/rock.png" alt="Cpu action" width="50" height="50">
@@ -29,7 +29,7 @@
   
         <div id="playerhpbar" class="hpbar">
           <p>PLAYER</p>
-          <p id="player_hp">HP: 5/5</p>
+          <p id="player_hp">HP: {{player_hp}}/5</p>
         </div>
       </div>
 
@@ -41,7 +41,12 @@
             <p>PLAYER DO?</p>
           </td>
           <td class="td1">
-            <table id="table2"><tr><td class="td2"><p id="r"><i class="fa fa-caret-right fa-lg"></i> ROCK</p></td><td class="td2"><p id="p">PAPER</p></td></tr><tr><td class="td2"><p id="s">SCISSORS</p></td><td class="td2"></td></tr></table>
+            <table id="table2"><tr>
+              <td class="td2"><p id="r"><i v-if="move_state=='r'" class="fa fa-caret-right fa-lg"></i> ROCK</p></td>
+              <td class="td2"><p id="p"><i v-if="move_state=='p'" class="fa fa-caret-right fa-lg"></i> PAPER</p></td></tr><tr>
+              <td class="td2"><p id="s"><i v-if="move_state=='s'" class="fa fa-caret-right fa-lg"></i> SCISSORS</p></td>
+              <td class="td2"></td></tr>
+            </table>
           </td>
         </tr>
       </table>
